@@ -43,9 +43,9 @@ def scrapBookDepository():
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('interval', minutes=1)
-def interval_job():
-    scrapBookDepository()
+# @sched.scheduled_job('interval', minutes=1)
+# def interval_job():
+#     scrapBookDepository()
 
 @sched.scheduled_job('cron', day_of_week='mon-sun', hour=15)
 def cron_job():
