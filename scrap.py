@@ -29,6 +29,8 @@ def scrapBookDepository():
 
         name = name.replace(' ', '%20')
 
+        insertPrice(price, name, currency)
+
         return {'name':name, 'price':price, 'currency':currency}
 
     elif req.status_code == 400:
