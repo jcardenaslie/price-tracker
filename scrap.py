@@ -7,7 +7,7 @@ import atexit
 # FUNCTIONS ############################################################
 
 def insertPrice(price, name, currency):
-    requests.get('https://octeto.000webhostapp.com/add-price.php?price={}&name={}&currency={}'.format(price, name, currency)).text
+    requests.get('https://octeto.000webhostapp.com/price-add.php?price={}&name={}&currency={}'.format(price, name, currency)).text
 
 def scrapBookDepository():
     url = 'https://www.bookdepository.com/es/User-Stories-Applied-Mike-Cohn/9780321205681'
